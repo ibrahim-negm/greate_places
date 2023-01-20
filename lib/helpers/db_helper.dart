@@ -20,6 +20,7 @@ class DBHelper {
       conflictAlgorithm: ConflictAlgorithm.replace,
     );
   }
+
   static Future<void> delete(String table, String id) async {
     final db = await DBHelper.database();
     db.delete(
@@ -34,3 +35,4 @@ class DBHelper {
     return db.query(table);
   }
 }
+// test
